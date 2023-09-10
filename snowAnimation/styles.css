@@ -1,0 +1,122 @@
+body {
+    background-image: linear-gradient( rgb(47, 85, 182), rgb(11, 25, 105) );
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Snow Animation */
+
+.snowWrapper {
+    height: 100vh;
+    width: 100vw;
+}
+
+.snow, .snow:before, .snow:after {
+    content: "";
+    position: absolute;
+    top: -700px ;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background-image: 
+    radial-gradient(6px 6px at 20px 50px, #fff, transparent),
+    radial-gradient(7px 7px at 300px 10px, #fff, transparent),
+    radial-gradient(8px 8px at 170px 100px, #ffffffad, transparent),
+    radial-gradient(20px 20px at 392px 220px, #ffffff4d, transparent),
+    radial-gradient(2px 2px at 500px 210px, #fff, transparent),
+    radial-gradient(3px 3px at 100px 420px, #fff, transparent),
+    radial-gradient(4px 4px at 400px 5px, #fff, transparent),
+    radial-gradient(5px 5px at 10px 450px, #fff, transparent);
+
+    background-size: 700px 700px;
+
+    animation: snowAnim 3.5s linear;
+    animation-iteration-count: infinite;
+}
+
+.snow:before {
+    margin-left: -350px;
+    opacity: 0.7;
+    animation-direction: reverse;
+    animation-duration: 5s;
+}
+
+.snow:after {
+    margin-left: -250px;
+    opacity: 0.4;
+    animation-direction: reverse;
+    animation-duration: 7s;
+}
+
+
+@keyframes snowAnim {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(700px);
+    }
+}
+
+
+
+/* Animated Shapes */
+
+@keyframes diamondAnim {
+    from {
+        background-color: #ffffff5e;
+        transform: rotate(45deg);
+        border-radius: 0px;
+    }
+    to {
+        background-color: #ffffff26;
+        transform: rotate(360deg);
+        border-radius: 50%;
+    }
+}
+
+
+.wrap {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.diamond1 {
+    box-shadow: 3px 3px 10px #00000037;
+    height: 100px;
+    width: 100px;
+    background-color: #ffffff80;
+    border: 1px solid #ffffff76;
+    animation: diamondAnim 5s ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+.diamond2 {
+    box-shadow: 3px 3px 10px #00000037;
+    height: 140px;
+    width: 140px;
+    transform: rotate(5deg);
+    background-color: #ffffff80;
+    border: 1px solid #ffffff76;
+    animation: diamondAnim 5s ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.diamond3 {
+    box-shadow: 3px 3px 10px #00000037;
+    height: 180px;
+    width: 180px;
+    transform: rotate(15deg);
+    background-color: #ffffff80;
+    border: 1px solid #ffffff76;
+    animation: diamondAnim 5s ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+

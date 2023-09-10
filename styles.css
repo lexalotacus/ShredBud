@@ -1,0 +1,312 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 0;
+}
+
+    
+/* vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv DOWNLOAD BUTTONS vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv */
+
+
+.buttons {
+    text-align: right;
+    width: 100vw;
+    position: fixed;
+    padding: 1%;
+    z-index: 500;
+ }
+
+.googleDownloadBtn {
+    color: #7493ca;
+    border-radius: 20px;
+    background: #ffffff;
+    border: 1px solid #7493ca;
+    height: 50px;
+    width: 160px;
+    margin: .5rem;
+    transition: background-color 0.3s ease;
+}
+
+.appleDownloadBtn {
+   background-color: #7493ca;
+   color: #ffffff;
+   border-radius: 20px;
+   border: 1px solid #ffffff;
+   height: 50px;
+   width: 160px;
+   margin: .5rem;
+   transition: background-color 0.3s ease;
+}
+
+.googleDownloadBtn:hover {
+    background: #d8e5fc;
+}
+
+.appleDownloadBtn:hover {
+   background-color: #8da5d1;
+}
+
+.fa-brands {
+    margin: .5rem;
+}
+
+
+/* vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv SNOW ANIMATION vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv */
+
+
+#toggleButton {
+    background-color: #7493ca;
+    color: #ffffff;
+    border-radius: 20px;
+    font-size: .7rem;
+    border: 1px solid #ffffff42;
+    height: 40px;
+    width: 120px;
+    text-align: center;
+    position: fixed;
+    z-index: 500;
+    top: 30px;
+    left: 30px;
+    transition: background-color 0.3s ease;
+ }
+
+ #toggleButton:hover {
+    background-color: #8da5d1;
+ }
+
+.snowWrapper {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+}
+
+.snow, .snow:before, .snow:after {
+    content: "";
+    position: absolute;
+    top: -700px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background-image: 
+    radial-gradient(6px 6px at 20px 50px, #fff, transparent),
+    radial-gradient(7px 7px at 300px 10px, #fff, transparent),
+    radial-gradient(8px 8px at 170px 100px, #ffffffad, transparent),
+    radial-gradient(20px 20px at 392px 220px, #ffffff4d, transparent),
+    radial-gradient(2px 2px at 500px 210px, #fff, transparent),
+    radial-gradient(3px 3px at 100px 420px, #fff, transparent),
+    radial-gradient(4px 4px at 400px 5px, #fff, transparent),
+    radial-gradient(5px 5px at 10px 450px, #fff, transparent);
+
+    background-size: 700px 700px;
+
+    animation: snowAnim 3.5s linear;
+    animation-iteration-count: infinite;
+}
+
+.snow:before {
+    margin-left: -350px;
+    opacity: 0.7;
+    animation-direction: reverse;
+    animation-duration: 5s;
+}
+
+.snow:after {
+    margin-left: -250px;
+    opacity: 0.4;
+    animation-direction: reverse;
+    animation-duration: 7s;
+}
+
+@keyframes snowAnim {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(700px);
+    }
+}
+
+
+/* vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv FIRST BLOCK vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv */
+
+
+#firstBlock {
+   background-image: linear-gradient(#7493ca, rgb(255, 255, 255));
+   min-height: 100vh;
+   height: auto;
+   padding-top: 10%;
+   text-align: center;
+}
+
+.firstBlockHeading {
+    font-weight: 400;
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+
+.headerSpan {
+    font-weight: 600;
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+    color: #e2edff;
+}
+
+.firstBlockParagraph {
+    font-weight: 500;
+    color: #ffffff;
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+    margin: 2% 25% 0 25%;
+}
+
+.logo {
+    height: 25rem;
+    padding: 0 15px 0 0;
+}
+
+.logo:hover {
+    height: 27rem;
+    padding: 0 15px 0 0;
+}
+
+
+/* vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv SECOND BLOCK vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv */
+
+
+#secondBlock {
+    background-color: #7493ca;
+    min-height: 100vh;
+    height: auto;
+    padding: 40px;
+}
+
+.textContainer {
+    text-align: center;
+}
+
+.secondBlockHeading {
+    font-weight: bold;
+    color: #ffffff;
+    letter-spacing: 2px;
+    margin-top: 5%;
+}
+
+.secondBlockParagraph {
+    font-weight: 500;
+    color: #ffffff;
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+    margin: 2% 20% 0 20%;
+}
+
+.images {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 4%;
+
+}
+
+.screenshot1 {
+    height: 340px;
+}
+
+.screenshot2 {
+    height: 340px;
+    position: relative;
+    top: 50px;
+    left: -40px;
+}
+
+.screenshot1:hover {
+    height: 360px;
+    z-index: 1;
+}
+
+.screenshot2:hover {
+    height: 360px;
+    position: relative;
+    top: 50px;
+    left: -40px;
+    z-index: 2;
+}
+
+
+/* vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv THIRD BLOCK vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv */
+
+
+#thirdBlock {
+    background-image: linear-gradient(195deg, #9eb5de, white, white);
+    min-height: 100vh;
+    height: auto;
+    padding: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px; 
+}
+
+.featureCard {
+    width: 250px;
+    height: 250px;
+    padding: 15px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: solid #9eb5de 1px;
+}
+
+.featureCard:hover {
+    width: 260px;
+    height: 260px;
+    padding: 25px;
+    box-shadow: 0px 0px 20px rgba(116, 147, 202, 0.287);
+}
+
+.cardImage {
+   height: 75px;
+}
+
+.featuresHeader {
+    color: #7493ca;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.featureText {
+    color: #7493ca;
+    font-size: 16px;
+    letter-spacing: .5px;
+}
+
+.bottomButtons {
+   text-align: center;
+}
+
+
+/* vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv FOOTER vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv */
+
+
+.footerContainer {
+    background-color: #7493ca;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerText {
+    font-size: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0 0 0 15px;
+}
+    
+.fa-facebook, .fa-instagram {
+    color: #ffffff;
+}
