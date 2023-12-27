@@ -51,6 +51,7 @@ body {
 }
 
 
+
 /* vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv SNOW ANIMATION vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv */
 
 
@@ -158,7 +159,7 @@ body {
     color: #ffffff;
     letter-spacing: 1px;
     font-size: 1.3rem;
-    margin: 2% 25% 0 25%;
+    margin: 2% 17% 0 17%;
 }
 
 .logo {
@@ -287,6 +288,24 @@ body {
    text-align: center;
 }
 
+.backToTopButton {
+    text-align: center;
+    width: 100px;
+    height: 20px;
+    border: 1px solid #9eb5de;
+    border-radius: 4px;
+    margin: auto;
+    margin-bottom: 25px;
+}
+
+.backToTopText {
+    text-align: center;
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #9eb5de;
+    text-decoration: none;
+}
+
 
 /* vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv FOOTER vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv */
 
@@ -309,4 +328,99 @@ body {
     
 .fa-facebook, .fa-instagram {
     color: #ffffff;
+}
+
+
+
+
+
+/* vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv MEDIA QUERIES vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv */
+
+@media screen and (max-width: 700px) {
+
+    #firstBlock {
+        padding-top: 20%;
+     }
+     
+     .firstBlockHeading {
+         font-size: 2.5rem;
+     }
+     
+     .headerSpan {
+         font-size: 2.5rem;
+     }
+     
+     .firstBlockParagraph {
+        font-size: 1rem;
+        margin: 4% 15%
+    }
+     
+    .logo {
+        height: 15rem;
+        margin: 0 15%
+    }
+
+    .googleDownloadBtn {
+       display: block;
+       margin-left: auto;
+       width: 75px;
+       border-radius: 30px;
+    }
+    
+    .appleDownloadBtn {
+        display: block;
+       margin-left: auto;
+       width: 75px;
+       border-radius: 30px;
+    }
+
+    .buttonText {
+        display: none;
+    }
+    
+    .buttonText2 {
+        display: none;
+    }
+
+#secondBlock {
+    background-color: #7493ca;
+    min-height: 100vh;
+    height: auto;
+    padding: 20px;
+}
+
+.secondBlockHeading {
+    font-weight: bold;
+    color: #ffffff;
+    letter-spacing: 2px;
+    margin-top: 8%;
+    font-size: 1.8rem;
+}
+
+.secondBlockParagraph {
+    font-weight: 500;
+    color: #ffffff;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    margin: 5% 15%;
+}
+
+.images {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 4%;
+
+}
+
+.screenshot1 {
+    height: 250px;
+}
+
+.screenshot2 {
+    height: 250px;
+    top: 50px;
+    left: -40px;
+}
+    
 }
